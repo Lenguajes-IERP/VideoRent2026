@@ -23,14 +23,14 @@ Accept: application/json
 }
 
 ### Update actor
-PUT {{VideoRent.WebApi_HostAddress}}/api/actors/1
+PUT {{VideoRent.WebApi_HostAddress}}/api/actors/45
 Content-Type: application/json
 Accept: application/json
 
 {
-  "actorId": 1,
-  "nombreActor": "Tom",
-  "apellidosActor": "Hanks Updated"
+  "actorId": 45,
+  "nombreActor": "Keanu",
+  "apellidosActor": "Reevesxyz"
 }
 
 ### Get actor by ID
