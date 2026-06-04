@@ -1,7 +1,7 @@
 <Solution>
-  <Project Path="VideoRent.API/VideoRent.API.csproj" Id="756f3b06-14c0-45a0-aace-83224d91c11a" />
   <Project Path="VideoRent.Business/VideoRent.Business.csproj" />
   <Project Path="VideoRent.Data/VideoRent.Data.csproj" />
   <Project Path="VideoRent.Domain/VideoRent.Domain.csproj" />
   <Project Path="VideoRent.Test/VideoRent.Test.csproj" />
+  <Project Path="VideoRent.WebApi/VideoRent.WebApi.csproj" Id="b8bf6c37-3857-4430-b21c-617ea5a0fdcb" />
 </Solution>

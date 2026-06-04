@@ -1,0 +1,42 @@
+@VideoRent.WebApi_HostAddress = http://localhost:5225
+
+GET {{VideoRent.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+GET {{VideoRent.WebApi_HostAddress}}/api/genero/
+Accept: application/json
+
+###
+GET {{VideoRent.WebApi_HostAddress}}/api/actors/
+Accept: application/json
+
+### Create new actor
+POST {{VideoRent.WebApi_HostAddress}}/api/actors/
+Content-Type: application/json
+Accept: application/json
+
+{
+  "actorId": 0,
+  "nombreActor": "Tom",
+  "apellidosActor": "Hanks"
+}
+
+### Update actor
+PUT {{VideoRent.WebApi_HostAddress}}/api/actors/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "actorId": 1,
+  "nombreActor": "Tom",
+  "apellidosActor": "Hanks Updated"
+}
+
+### Get actor by ID
+GET {{VideoRent.WebApi_HostAddress}}/api/actors/45
+Accept: application/json
+
+### Delete actor
+DELETE {{VideoRent.WebApi_HostAddress}}/api/actors/1
+Accept: application/json
