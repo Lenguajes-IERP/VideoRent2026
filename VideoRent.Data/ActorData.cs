@@ -76,6 +76,7 @@ namespace VideoRent.Data
         // READ (Retrieve an Actor by ID)
         public Actor GetActorById(int actorId)
         {
+            Actor actor = new Actor();
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
@@ -92,17 +93,14 @@ namespace VideoRent.Data
                     {
                         if (reader.Read())
                         {
-                            return new Actor
-                            {
-                                ActorId = reader.GetInt32(reader.GetOrdinal("actor_id")),
-                                NombreActor = reader.GetString(reader.GetOrdinal("nombre_actor")),
-                                ApellidosActor = reader.GetString(reader.GetOrdinal("apellidos_actor"))
-                            };
+                            actor.ActorId = reader.GetInt32(reader.GetOrdinal("actor_id")),
+                            actor.NombreActor = reader.GetString(reader.GetOrdinal("nombre_actor")),
+                            actor.ApellidosActor = reader.GetString(reader.GetOrdinal("apellidos_actor"))
                         }
                     }
                 }
             }
-            return null; // Actor not found
+            return actor; // Actor not found
         }
 
         // UPDATE (Update an existing Actor)
