@@ -1,5 +1,33 @@
-@VideoRent.WebApi_HostAddress = http://localhost:5225
+@VideoRent.WebApi_HostAddress = https://localhost:7154
 
+POST {{VideoRent.WebApi_HostAddress}}/api/peliculas/
+Content-Type: application/json
+Accept: application/json
+
+{
+  "peliculaId": 0,
+  "titulo": "Inception",
+  "subtitulada": true,
+  "estreno": false,
+  "genero": {
+    "generoId": 22,
+    "nombreGenero":""
+  },
+  "actores": [
+    {
+      "actorId": 45,
+      "nombreActor":"",
+      "apellidosActor":""
+    },
+    {
+      "actorId": 46,
+      "nombreActor":"",
+      "apellidosActor":""
+    }
+  ]
+}
+
+###
 GET {{VideoRent.WebApi_HostAddress}}/weatherforecast/
 Accept: application/json
 

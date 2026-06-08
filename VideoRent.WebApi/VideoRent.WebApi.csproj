@@ -15,4 +15,8 @@
     <ProjectReference Include="..\VideoRent.Domain\VideoRent.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Endpoints\" />
+  </ItemGroup>
+
 </Project>
